@@ -1,0 +1,15 @@
+<h1 style="font-size:50px; text-align:center;">FRAGEMENTS OF SOUL</h1>
+
+<p style="font-size:20px; text-align:center; margin-bottom:50px;">Inspiring Emotional Healing Through Poetry.<br>Join our vibrant community and explore the transformative power of poetry workshops,
+open mic nights, and outreach programs designed for emotional connection.</p>
+
+<div style="text-align:center;"><a style="font-size:20px; background-color: black;padding: 8px 20px 8px 20px;color: white;" 
+href="https://dev-fragments-of-my-soul.pantheonsite.io/#">click here</a></div>
+
+<hr style="width: 60%;">
+
+<h1 style="font-size:50px; text-align:center;">-By Rohit</h1>
+
+<img style="width: 33%" src="C:\web/nature.png">
+<img style="width: 33%"src="C:\web/naturee.png">
+
