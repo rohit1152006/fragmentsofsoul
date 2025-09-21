@@ -1,21 +1,129 @@
-<div style="text-align:center; margin-top:40px;"><img src="Frag.png"></div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fragments of Soul</title>
+    <!-- Use the Inter font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Include Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-image: url('ty.jpg'); /* The original image from the user */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 100vh;
+            color: #1a202c;
+            animation: fadeIn 2s ease-in-out;
+        }
 
-<div style="text-align:center; margin-top:40px;">
-<a style="padding-right: 20px;" href="poem.html">POEMS</a>
-<a style="padding-right: 20px;" href="aboutus.html">ABOUT US</a>
-<a style="padding-right: 20px;" href="contact.html">CONTACT</a>
-</div>
-<h1 style="font-size:50px; text-align:center;">FRAGMENTS OF SOUL</h1>
+        /* Define the keyframe animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
 
-<p style="font-size:20px; text-align:center; margin-bottom:50px;">WELCOME ALL<br>
-Inspiring Emotional Healing Through Poetry.<br>Join our vibrant community and be the reason for someone's happiness,
-your talent can be the reason for someones smile who knows.<br>This is a website designed for uploading and reading poems.<br>people come here to read and smile where few come to upload and make the people smile
-If your new Then Be any person among them.<br>LIFE IS SHORT,LIVE IT WORST,DIE FAST</p>
+        @keyframes slideInFromTop {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
 
-<hr style="width: 60%;">
+        @keyframes slideInFromBottom {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        
+        @keyframes stretchAndFade {
+            from { transform: scaleX(0); opacity: 0; }
+            to { transform: scaleX(1); opacity: 1; }
+        }
 
-<h1 style="font-size:50px; text-align:center;">-By Rohit</h1>
+        /* Apply the animations with delays for a staggered effect */
+        .animated-heading {
+            animation: slideInFromTop 1s ease-out;
+        }
 
-<img style="width: 33%" src="nature.png">
+        .animated-text {
+            animation: slideInFromBottom 1s ease-out;
+            animation-delay: 0.5s;
+            animation-fill-mode: forwards;
+            opacity: 0;
+        }
+        
+        .animated-hr {
+            animation: stretchAndFade 1.5s ease-out;
+            transform-origin: center;
+        }
 
+        /* Style for the link buttons with a hover animation */
+        .animated-link {
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            display: inline-block;
+            animation: slideInFromBottom 1s ease-out;
+            animation-delay: 1.5s; /* Stagger the links */
+            animation-fill-mode: forwards;
+            opacity: 0;
+        }
 
+        .animated-link:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="p-8 md:p-16">
+    <div class="container mx-auto max-w-4xl p-8 bg-white bg-opacity-80 backdrop-blur-sm rounded-3xl shadow-2xl">
+        <!-- New Image Section -->
+        <div class="flex justify-center mt-10 animated-heading">
+            <img class="w-2/5 md:w-1/4 rounded-lg shadow-lg" src="https://placehold.co/600x400/000000/FFFFFF?text=Frag.png" alt="Fragments of Soul logo">
+        </div>
+
+        <!-- New Navigation Links -->
+        <div class="flex flex-col md:flex-row justify-center items-center mt-10 space-y-4 md:space-y-0 md:space-x-5">
+            <a href="poems.html" class="animated-link w-full md:w-auto text-center bg-sky-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-opacity-50">
+                POEMS
+            </a>
+            <a href="aboutus.html" class="animated-link w-full md:w-auto text-center bg-emerald-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-opacity-50" style="animation-delay: 1.7s;">
+                ABOUT US
+            </a>
+            <a href="contact.html" class="animated-link w-full md:w-auto text-center bg-fuchsia-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-fuchsia-700 focus:outline-none focus:ring-2 focus:ring-fuchsia-500 focus:ring-opacity-50" style="animation-delay: 1.9s;">
+                CONTACT
+            </a>
+        </div>
+        
+        <!-- Main Heading -->
+        <h1 class="text-4xl md:text-5xl font-extrabold text-center mt-12 mb-2 text-slate-900 animated-heading" style="animation-delay: 0.8s;">
+            FRAGMENTS OF SOUL
+        </h1>
+        
+        <!-- Main Content Paragraph -->
+        <p class="text-md md:text-xl text-center text-gray-700 mb-12 animated-text">
+            WELCOME ALL<br>
+            Inspiring Emotional Healing Through Poetry.<br>
+            Join our vibrant community and be the reason for someone's happiness,
+            your talent can be the reason for someone's smile who knows.<br>
+            This is a website designed for uploading and reading poems.<br>
+            People come here to read and smile where few come to upload and make the people smile
+            If you're new Then Be any person among them.<br>
+            LIFE IS SHORT, LIVE IT WORST, DIE FAST
+        </p>
+        
+        <!-- New HR and Byline -->
+        <hr class="w-3/5 h-1 mx-auto my-8 border-none bg-slate-900 rounded-full animated-hr" style="animation-delay: 1.5s;">
+
+        <h1 class="text-3xl md:text-4xl font-extrabold text-center mb-6 text-slate-900 animated-heading" style="animation-delay: 1.8s;">
+            -By Rohit
+        </h1>
+
+        <!-- New Image -->
+        <div class="flex justify-center animated-text" style="animation-delay: 2.2s;">
+            <img class="w-full md:w-1/3 rounded-lg shadow-lg" src="https://placehold.co/400x300/000000/FFFFFF?text=nature.png" alt="A nature scene">
+        </div>
+    </div>
+</body>
+</html>
